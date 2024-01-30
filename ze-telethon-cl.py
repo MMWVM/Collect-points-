@@ -1,4 +1,4 @@
-from DYLAR import DYLAR
+from mody import Mody
 import threading
 import os
 import json
@@ -22,7 +22,7 @@ import re
 
 #------------------------ vars -------------------------#
 # -
-# - ELDYLAR ALONE 
+# - ZE TEAM 
 # -
 
 A = '\033[1;34m'#ازرق
@@ -31,7 +31,7 @@ X = '\033[1;33m' #اصفر
 
 
 #logo
-logo = pyfiglet.figlet_format('*      Ze      *')
+logo = pyfiglet.figlet_format('*      ZE      *')
 print(X+logo)
 print('  ')
 print(A+'═'*60)
@@ -58,13 +58,13 @@ try:
         # Extract bot_username from the response
         user_bot = response_data['result']['username']
 except FileNotFoundError:
-    api_id = DYLAR.API_ID
-    api_hash = DYLAR.API_HASH
-    bot_token = DYLAR.dylar
-    DEVLOO = DYLAR.OWNER
-    MAX_ACCOUNTS = DYLAR.MAX_ACCOUNTS
-    id_bot = DYLAR.ID_BOT
-    user_bot = DYLAR.USER_BOT
+    api_id = Mody.API_ID
+    api_hash = Mody.API_HASH
+    bot_token = Mody.ELHYBA
+    DEVLOO = Mody.OWNER
+    MAX_ACCOUNTS = Mody.MAX_ACCOUNTS
+    id_bot = Mody.ID_BOT
+    user_bot = Mody.USER_BOT
     
     data = {
         'api_id': api_id,
@@ -90,7 +90,7 @@ bot = TelegramClient('bot', api_id, api_hash).start(bot_token=bot_token)
 
 DEVELOPER_ID = int(DEVLOO)
 OWNER_ID = DEVELOPER_ID
-developer_id = DYLAR.OWNER
+developer_id = Mody.OWNER
 days_left = 28
 run = False
 datee = datetime.now()
@@ -134,7 +134,7 @@ async def start(event):
 async def lista(event):
     if event.sender_id == DEVELOPER_ID:
         buttons = [
-            [Button.inline('< 🔱𝗗َ!𝗬َ𝗟𝗔َ𝗥 个🔱 >', 'ze')],
+            [Button.inline('< 🔱 𝐙𝐄 🔱 >', 'ze')],
             [Button.inline('∘ اضف رقم ∘', 'addnum'), Button.inline('∘ حذف رقم ∘', 'delnum')],
             [Button.inline('∘ عدد الحسابات ∘', 'numacc')],
             [Button.inline('∘ فحص الحسابات ∘', 'tstacc'), Button.inline('∘ فلود الانضمام ∘', 'tstflood')],
@@ -164,7 +164,7 @@ async def handler(event):
     if data == 'ze':
         await bot.send_message(OWNER_ID, f"""**∘ بوت زد إي لتجميع النقاط واوامر اخرى 
 
-∘ مطور ومبرمج البوت ديلر الهيبه - @kjj_k
+∘ مطور ومبرمج البوت مودي الهيبه - @elhyba
 
 ∘ اصدار البوت = 4 Version شبه منقح**""")
 
@@ -234,7 +234,7 @@ async def callback(event):
                     await bot.send_message(user, "/restart")
                 except:
                     continue  
-            await event.edit("""** يتم مسح بيانات البوت**""", buttons=[Button.inline("• رجــوع • ", 'list1')])
+            await event.edit("""** يتم مسح بيانات اابوت**""", buttons=[Button.inline("• رجــوع • ", 'list1')])
             num_accounts = 0
             stored_users = []
             for file in os.listdir():
@@ -964,7 +964,7 @@ session = "{session}"
 devloo = {id_bot}       
 ubot = '{user_bot}'
       
-\n\n""" + DYLAR10)
+\n\n""" + mody10)
 
     with open("run.py", "r") as f:
         lines = f.readlines()
@@ -1206,5 +1206,5 @@ bot.run_until_disconnected()
 
 
 
-# • DR  - Controller Bot • #
+# • Ze Team - Controller Bot • #
 
