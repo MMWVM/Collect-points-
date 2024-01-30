@@ -2,9 +2,9 @@ import os
 
 
 class Mody(object):
-    ELDYLAR = os.environ.get("ELDYLAR", "")
+    ELHYBA = os.environ.get("ELHYBA", "")
     
-    OWNER = os.environ.get("OWNER", "1591029063")
+    OWNER = os.environ.get("OWNER", "6581896306")
     
     ID_BOT = int(os.environ.get("ID_BOT", ""))
     
