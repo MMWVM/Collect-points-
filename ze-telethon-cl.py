@@ -60,7 +60,7 @@ try:
 except FileNotFoundError:
     api_id = DYLAR.API_ID
     api_hash = DYLAR.API_HASH
-    bot_token = DYLAR.𝗗َ!𝗬َ𝗟𝗔َ𝗥
+    bot_token = DYLAR.dylar
     DEVLOO = DYLAR.OWNER
     MAX_ACCOUNTS = DYLAR.MAX_ACCOUNTS
     id_bot = DYLAR.ID_BOT
