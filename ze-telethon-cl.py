@@ -119,7 +119,7 @@ async def start(event):
     sender = await event.get_sender()
     if sender.id == DEVELOPER_ID:
         buttons = [
-            [Button.inline('< 🔱 𝐙𝐄 🔱 >', 'ze')],
+            [Button.inline('< 🔱 𝐃𝐑 🔱 >', 'ze')],
             [Button.inline('∘ اضف رقم ∘', 'addnum'), Button.inline('∘ حذف رقم ∘', 'delnum')],
             [Button.inline('∘ عدد الحسابات ∘', 'numacc')],
             [Button.inline('∘ فحص الحسابات ∘', 'tstacc'), Button.inline('∘ فلود الانضمام ∘', 'tstflood')],
@@ -134,7 +134,7 @@ async def start(event):
 async def lista(event):
     if event.sender_id == DEVELOPER_ID:
         buttons = [
-            [Button.inline('< 🔱 𝐙𝐄 🔱 >', 'ze')],
+            [Button.inline('< 🔱 𝐃𝐑 🔱 >', 'ze')],
             [Button.inline('∘ اضف رقم ∘', 'addnum'), Button.inline('∘ حذف رقم ∘', 'delnum')],
             [Button.inline('∘ عدد الحسابات ∘', 'numacc')],
             [Button.inline('∘ فحص الحسابات ∘', 'tstacc'), Button.inline('∘ فلود الانضمام ∘', 'tstflood')],
@@ -162,9 +162,9 @@ async def handler(event):
 async def handler(event):
     data = event.data.decode('utf-8')
     if data == 'ze':
-        await bot.send_message(OWNER_ID, f"""**∘ بوت زد إي لتجميع النقاط واوامر اخرى 
+        await bot.send_message(OWNER_ID, f"""**∘ بوت 𝐃𝐑 لتجميع النقاط واوامر اخرى 
 
-∘ مطور ومبرمج البوت مودي الهيبه - @elhyba
+∘ مطور ومبرمج البوت الديلر - @KJJ_K
 
 ∘ اصدار البوت = 4 Version شبه منقح**""")
 
@@ -630,7 +630,7 @@ async def start(event):
         [Button.inline('رشـــق قناة ⊕', 'aibo'), Button.inline('مغادرة قناة ⊖', 'ajbo')],
         [Button.inline('رشق مشاهدات ⟐', 'akbo')],
         
-         [Button.inline('༺ 🔱 𝐙𝐄 🔱 𝐁𝐎𝐓 ༻', 'button0')]
+         [Button.inline('༺ 🔱 𝐃𝐑 🔱 𝐁𝐎𝐓 ༻', 'button0')]
         ]
         await bot.send_message(chat, '''**╭─╮ ┬┈┬ ╭┬╮ ┬┈┬ ╭─╮ ╭╮╭  
 ╰─╮ ╰┬╯ ┈│┈ ├─┤ │┈│ │││  
