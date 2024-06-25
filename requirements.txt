@@ -13,3 +13,4 @@ speedtest-cli
 httpx[http2]
 pyrogram
 user_agent
+sqlite3
