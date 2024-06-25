@@ -12,8 +12,8 @@ class Mody(object):
     
     MAX_ACCOUNTS = int(os.environ.get("MAX_ACCOUNTS", ""))
     
-    API_ID = os.environ.get("API_ID", "29043491")
+    API_ID = os.environ.get("API_ID", "20207154")
     
-    API_HASH = os.environ.get("API_HASH", "4370215b4bce25aa86500a328d919b31")
+    API_HASH = os.environ.get("API_HASH", "c12a0ed00a7adc1b1ddc1572140e4e80")
     
 
